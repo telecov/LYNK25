@@ -20,9 +20,20 @@ function get_latest_log() {
     $files = glob(LOG_DIR . "P25Reflector-*.log");
     if (!$files) return null;
 
-    usort($files, fn($a,$b) => filemtime($b) - filemtime($a));
+    // Ordenar por fecha basada en el NOMBRE del archivo, no en filemtime()
+    usort($files, function($a, $b) {
+        preg_match('/P25Reflector-(\d{4}-\d{2}-\d{2})\.log$/', $a, $ma);
+        preg_match('/P25Reflector-(\d{4}-\d{2}-\d{2})\.log$/', $b, $mb);
+
+        $da = strtotime($ma[1] ?? '1970-01-01');
+        $db = strtotime($mb[1] ?? '1970-01-01');
+
+        return $db - $da; // más nuevo primero
+    });
+
     return $files[0];
 }
+
 
 // -----------------------------------------------------------
 // Ejecutar tail -F y detectar rotación REAL
