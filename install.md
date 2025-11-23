@@ -211,7 +211,7 @@ sudo crontab -u www-data -e
 Verifica el Crontab
 
 ```bash
-sudo crontab -l
+sudo crontab -u www-data -l
 ```
 
 3. Acceso WEB
