@@ -6,7 +6,9 @@
 *** Tener instalado y corriendo DVREFLECTOR de NOSTAR ***
 https://github.com/nostar/DVReflectors
 
-si ya lo tienes instalado y funcionando, puedes saltar directamente a la instalacion del DASHBOARD, ahora si estas inciando puedes seguir el paso a paso apoyando de este video 
+si ya lo tienes instalado y funcionando, puedes saltar directamente a la instalacion del DASHBOARD, ahora si estas inciando puedes seguir el paso a paso apoyando de este video
+
+PRECAUCION, si ya tienes un dasboard web funciaonado te recomiendo realizar backup, o instalar este dashboard paralelo para que lo pruebes antes por ejemplo guardarlo en http/p25/ para asi no perder lo que tienes en html
 
 ###
 
