@@ -6,6 +6,10 @@
 *** Tener instalado y corriendo DVREFLECTOR de NOSTAR ***
 https://github.com/nostar/DVReflectors
 
+si ya lo tienes instalado y funcionando, puedes saltar directamente a la instalacion del DASHBOARD, ahora si estas inciando puedes seguir el paso a paso apoyando de este video 
+
+###
+
 * Hardware recomendado:
 
 * Requisitos mínimos:
