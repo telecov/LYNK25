@@ -1,4 +1,4 @@
-<?php
+<?<?php
 // ==============================
 // RadioID Lookup + QRZ link
 // ==============================
@@ -32,39 +32,49 @@ function radioid_geocode($texto) {
 /**
  * Descargar JSON desde una URL con soporte cURL o file_get_contents
  */
-function http_get_json($url, $timeout = 3, $connectTimeout = 2) {
+function http_get_json($url, $timeout = 5, $connectTimeout = 3) {
+
+    // 1) Preferir cURL si existe
     if (function_exists('curl_init')) {
         $ch = curl_init($url);
         curl_setopt_array($ch, [
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_TIMEOUT => $timeout,
             CURLOPT_CONNECTTIMEOUT => $connectTimeout,
-            CURLOPT_USERAGENT => 'Lynk25 Dashboard/1.0',
-            CURLOPT_HTTPHEADER => ['Accept: application/json'],
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_USERAGENT => 'Lynk25 Dashboard',
         ]);
-        $raw  = curl_exec($ch);
-        $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $raw = curl_exec($ch);
         curl_close($ch);
-        if ($raw && $code >= 200 && $code < 300) {
-            $json = json_decode($raw, true);
-            if (json_last_error() === JSON_ERROR_NONE) return $json;
+
+        if ($raw) {
+            $j = json_decode($raw, true);
+            if (json_last_error() === JSON_ERROR_NONE) {
+                return $j;
+            }
         }
-        return null;
     }
 
-    // Fallback si no hay cURL
-    $ctx = stream_context_create(['http' => [
-        'method'  => 'GET',
-        'header'  => "Accept: application/json\r\nUser-Agent: Lynk25 Dashboard/1.0\r\n",
-        'timeout' => $timeout,
-    ]]);
+    // 2) fallback file_get_contents
+    $ctx = stream_context_create([
+        'http' => [
+            'method' => "GET",
+            'timeout' => $timeout,
+            'header' => "User-Agent: Lynk25 Dashboard\r\n"
+        ]
+    ]);
+
     $raw = @file_get_contents($url, false, $ctx);
     if ($raw) {
-        $json = json_decode($raw, true);
-        if (json_last_error() === JSON_ERROR_NONE) return $json;
+        $j = json_decode($raw, true);
+        if (json_last_error() === JSON_ERROR_NONE) {
+            return $j;
+        }
     }
+
     return null;
 }
+
 
 /**
  * Busca nombre en RadioID.net
