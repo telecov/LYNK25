@@ -36,6 +36,108 @@ PUTTY - para administrar Linux por SSH
 
 Para instalar en Raspberry OS se recomieda Raspberry pi Imager
 
+
+📡 Instalación del Reflector P25 (DVReflector)
+
+Creacion de usuario
+
+```bash
+sudo adduser p25reflector
+sudo usermod -aG sudo p25reflector
+```
+Descargar DVReflector P25
+
+```bash
+cd /opt
+sudo git clone https://github.com/nostar/DVReflectors.git
+sudo chmod -R 755 DVReflectors
+cd DVReflectors/P25Reflector
+```
+Compilar e instalar
+
+```bash
+sudo make
+sudo install -m 755 P25Reflector /usr/local/bin/
+```
+Copiar archivo INI a /etc/
+
+```bash
+sudo cp /opt/DVReflectors/P25Reflector/P25Reflector.ini /etc/P25Reflector.ini
+```
+Crear carpeta de logs
+
+```bash
+sudo mkdir -p /var/log/p25reflector
+sudo chmod 777 /var/log/p25reflector
+```
+Actualizar archivo DMRIds.dat
+
+```bash
+cd /opt/DVReflectors/P25Reflector
+sudo rm -f DMRIds.dat
+wget https://raw.githubusercontent.com/telecov/LYNK25/main/DMRIds.dat -O DMRIds.dat
+sudo chmod 644 DMRIds.dat
+```
+
+Configurar el archivo /etc/P25Reflector.ini
+```bash
+sudo nano /etc/P25Reflector.ini
+```
+```bash
+[General]
+Daemon=0
+
+[Id Lookup]
+Name=/opt/DVReflectors/P25Reflector/DMRIds.dat
+Time=24
+
+[Log]
+DisplayLevel=1
+FileLevel=1
+FilePath=/var/log/p25reflector
+FileRoot=P25Reflector
+FileRotate=1
+
+[Network]
+Port=41000
+Debug=0
+```
+
+Crear servicio Systemd para autoinicio
+
+```bash
+sudo nano /etc/systemd/system/p25reflector.service
+```
+
+```bash
+[Unit]
+Description=P25 Reflector
+After=network.target
+
+[Service]
+User=p25reflector
+ExecStart=/usr/local/bin/P25Reflector /etc/P25Reflector.ini
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable p25reflector
+sudo systemctl start p25reflector
+sudo systemctl status p25reflector
+```
+
+Limpieza de procesos (si hiciste pruebas)
+
+```bash
+sudo pkill -f P25Reflector
+sudo systemctl reset-failed p25reflector
+```
+
+
 ## 📦 Instalación del Dashboard
 
 🧰 Paso a paso
