@@ -640,7 +640,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'test_telegram') {
 <footer class="bg-dark text-white text-center py-3 mt-4">
   🚀 Dashboard web LYNK25 Desarrollado por <strong>Telecoviajero - CA2RDP</strong> |
   <a href="https://github.com/telecov/" target="_blank" class="text-info text-decoration-none">GitHub</a><br>
-  © 2025 Telecoviajero - CA2RDP. Todos los derechos reservados.
+  © 2025 Telecoviajero - CA2RDP.
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
