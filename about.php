@@ -194,7 +194,7 @@
 <footer class="bg-dark text-white text-center py-3 mt-auto">
   🚀 Dashboard web LYNK25 Desarrollado por <strong>Telecoviajero - CA2RDP</strong> |
   <a href="https://github.com/telecov/LYNK25" target="_blank" class="text-info text-decoration-none">GitHub</a><br>
-    © <?php echo date('Y'); ?> Telecoviajero – CA2RDP. Código bajo GPL v3..
+    © <?php echo date('Y'); ?> Telecoviajero – CA2RDP.
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
