@@ -1,5 +1,5 @@
 <?php
-$config_file     = __DIR__ . '/../header_config.json';
+$config_file     = __DIR__ . '/../data/header_config.json';
 $header_title    = "REFLECTOR P25 – ZONA DMR";
 $header_subtitle = "Conectando amigos, enlazando pasiones por el aire.";
 $header_logo     = "img/zdmrlogoindex.png";
