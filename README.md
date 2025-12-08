@@ -10,6 +10,8 @@ Inspirado por el trabajo abierto de **Jonathan Naylor (G4KLX)**, **DVReflector d
 ## 🚀 Funcionalidades
 - **Tiempo real:** tráfico y estado del reflector (`estado_reflector.json`).
 - **Estaciones conectadas:** lista dinámica, resalta la última 🆕.
+- **Cambio de IP y configuraciones archivo .INI
+- **Botones de gestion de servicios y reinicio de servidor.
 - **Historial:** transmisiones recientes con filtros.
 - **Ranking y podio:** actividad radial automática (Top 3).
 - **Mapa:** usuarios geolocalizados por ciudad/licencia (RadioID).
