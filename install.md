@@ -129,6 +129,22 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
+Permisos VISUDO para ejecutar cambios en el servidor 
+
+```bash
+sudo visudo -f /etc/sudoers.d/lynk25
+```
+
+```bash
+www-data ALL=(ALL) NOPASSWD:/usr/bin/systemctl start p25reflector.service
+www-data ALL=(ALL) NOPASSWD:/usr/bin/systemctl stop p25reflector.service
+www-data ALL=(ALL) NOPASSWD:/usr/bin/systemctl restart p25reflector.service
+www-data ALL=(ALL) NOPASSWD:/usr/bin/systemctl status p25reflector.service
+www-data ALL=(ALL) NOPASSWD:/usr/sbin/reboot
+www-data ALL=(ALL) NOPASSWD:/usr/bin/hostnamectl
+www-data ALL=(ALL) NOPASSWD:/usr/bin/nmcli
+```
+
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable p25reflector
