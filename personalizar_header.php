@@ -1,7 +1,4 @@
 <?php
-// lynk25_config.php
-// Panel unificado de configuración para Lynk25 (P25Reflector + Red + Telegram + Header + Credenciales)
-// Autor: Telecoviajero - CA2RDP
 
 session_start();
 date_default_timezone_set('America/Santiago');
@@ -525,7 +522,7 @@ $current_hostname = gethostname();
              title="Ir al Dashboard" aria-label="Dashboard">
             <i class="fas fa-house"></i>
           </a>
-          <a href="lynk25_config.php" class="btn btn-ghost btn-xxs btn-icon" data-bs-toggle="tooltip"
+          <a href="personalizar_header.php" class="btn btn-ghost btn-xxs btn-icon" data-bs-toggle="tooltip"
              title="Panel de configuración" aria-label="Config">
             <i class="fas fa-sliders-h"></i>
           </a>
@@ -668,10 +665,7 @@ $current_hostname = gethostname();
           <i class="fas fa-power-off me-1"></i> Reiniciar servidor
         </button>
       </form>
-      <small class="d-block mt-2 text-muted">
-        Ten en cuenta que estas acciones requieren permisos sudo para <code>p25reflector.service</code> y <code>reboot</code>.
-      </small>
-    </div>
+     </div>
   </div>
 
   <!-- ====== TARJETA: Configuración de Red – Ethernet ====== -->
@@ -719,7 +713,7 @@ $current_hostname = gethostname();
       </form>
 
       <small class="d-block mt-2 text-muted">
-        Usa IP fija. No se ofrece opción DHCP por diseño (según tu decisión).
+        Usa IP fija. No se recomienda DHCP por opciones de NAT.
       </small>
     </div>
   </div>
@@ -787,7 +781,7 @@ $current_hostname = gethostname();
         </div>
 
         <button type="submit" class="btn btn-info"><i class="fas fa-save me-1"></i> Guardar Telegram</button>
-        <a href="lynk25_config.php?action=test_telegram&csrf=<?php echo htmlspecialchars($_SESSION['csrf']); ?>"
+        <a href="personalizar_header.php?action=test_telegram&csrf=<?php echo htmlspecialchars($_SESSION['csrf']); ?>"
            class="btn btn-success">
           <i class="fas fa-paper-plane me-1"></i> Probar envío
         </a>
@@ -923,5 +917,3 @@ $current_hostname = gethostname();
 <script src="js/main.js"></script>
 </body>
 </html>
-
-
