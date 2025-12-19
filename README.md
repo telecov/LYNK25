@@ -83,6 +83,9 @@ Inspirado por el trabajo abierto de **Jonathan Naylor (G4KLX)**, **DVReflector d
 
 ## 👉 [Ver instalacion](install.md) 
 
+## 👉 [Ver cambios del sistema](CHANGELOG.md) 
+
+
 ## 🔗 Enlaces
 - 🌐 Sitio: https://zonadmr.cl  
 - 🧩 Repo: https://github.com/telecov/LYNK25
