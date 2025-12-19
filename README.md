@@ -85,14 +85,21 @@ Inspirado por el trabajo abierto de **Jonathan Naylor (G4KLX)**, **DVReflector d
 
 ## 👉 [Ver cambios del sistema](CHANGELOG.md) 
 
-
-## 🔗 Enlaces
-- 🌐 Sitio: https://zonadmr.cl  
-- 🧩 Repo: https://github.com/telecov/LYNK25
-
 ## 🤝 Créditos
 - **Jonathan Naylor (G4KLX)** – base de software para reflectores/MMDVM.  
 - **DVReflector de NØSTAR** – pilar para gestión moderna P25.  
 - Comunidad internacional de radioaficionados digitales.  
 
-> 🛰️ *LYNK25 – 2025*
+## 🧑‍💻 Autor
+
+CA2RDP - TelecoViajero
+Radioaficionado, desarrollador autodidacta y creador de contenidos digitales:
+
+* 🌐 GitHub: https://github.com/telecov
+* 🌐 QRZ: https://www.qrz.com/db/CA2RDP
+* 🔗 TikTok: https://tiktok.com/@telecoviajero
+* 🔗 Instagram: https://instagram.com/telecoviajero
+* 📺 YouTube: https://www.youtube.com/@Telecoviajero
+
+## Puedes Apoyar este proyecto de manera voluntaria
+https://www.paypal.com/donate/?hosted_button_id=3889KP3YBVXLE
