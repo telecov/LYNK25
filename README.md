@@ -6,6 +6,9 @@
 
 Inspirado por el trabajo abierto de **Jonathan Naylor (G4KLX)**, **DVReflector de NØSTAR**, y por la comunidad que hace posibles estos sistemas e inspira dashboards más intuitivos; adicionalmente como es de costubre, nombre, tipologia y colores, se basa en mi entorno familia, esta vez en **mi esposa Jocelyn**, gracias por siempre apoyar mis proyectos
 
+## DASHBOARD
+![Dashboard LYNK25](img/dashboard1.png)
+![Dashboard LYNK25](img/dashboard2.png)
 
 ## 🚀 Funcionalidades
 - **Tiempo real:** tráfico y estado del reflector (`estado_reflector.json`).
