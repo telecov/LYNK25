@@ -388,7 +388,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
                         <a href="about.php" class="btn btn-ghost btn-xxs btn-icon" data-bs-toggle="tooltip" title="About LYNK25" aria-label="About">
                             <i class="fas fa-circle-info"></i>
                         </a>
-                        
+
                         <?php if (!empty($telegram_cfg['invite_link'])): ?>
                             <a href="<?php echo htmlspecialchars($telegram_cfg['invite_link']); ?>" target="_blank"
                                 class="btn btn-ghost btn-xxs btn-icon" data-bs-toggle="tooltip"
@@ -412,8 +412,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
                             <?php echo $estado_reflector; ?>
                         </span>
 
-                        <?php $dvref = dvref_status_check(); ?>
-                        <span class="badge ms-2 bg-<?php echo ($dvref['status'] === 'EN LÍNEA DVREF' ? 'success' : 'danger'); ?>">
+                        <span class="badge ms-2 bg-<?php echo ($dvref['status'] === 'ONLINE DVREF' ? 'success' : 'danger'); ?>">
                             DVREF
                         </span>
                         <table class="table table-sm mb-0 align-middle mt-2">
@@ -902,12 +901,14 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
     </div>
 
 
-   <!-- FOOTER igual al index -->
+    <!-- FOOTER igual al index -->
     <footer class="bg-dark text-white text-center py-3 mt-auto">
         🚀 Dashboard web LYNK25 Desarrollado por <strong>Telecoviajero - CA2RDP</strong> | Version del dashboard <?php echo htmlspecialchars($system_version); ?> |
         <a href="https://github.com/telecov/LYNK25" target="_blank" class="text-info text-decoration-none">GitHub</a><br>
          2025 Telecoviajero – CA2RDP.
     </footer>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -919,3 +920,4 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
 </body>
 
 </html>
+
