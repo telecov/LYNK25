@@ -376,19 +376,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
                         <a href="about.php" class="btn btn-ghost btn-xxs btn-icon" data-bs-toggle="tooltip" title="About LYNK25" aria-label="About">
                             <i class="fas fa-circle-info"></i>
                         </a>
-                        <!-- Botón de verificación de actualización -->
-                        <a href="#" id="checkUpdate"
-                            class="btn btn-ghost btn-xxs btn-icon"
-                            data-bs-toggle="tooltip"
-                            title="Verificar actualizaciones LYNK25"
-                            aria-label="Actualizar">
-                            <i class="fas fa-rotate"></i>
-                        </a>
-
-                        <!-- Indicador o mensaje -->
-                        <small id="updateResult" class="text-muted ms-2"></small>
-
-
+                        
                         <?php if (!empty($telegram_cfg['invite_link'])): ?>
                             <a href="<?php echo htmlspecialchars($telegram_cfg['invite_link']); ?>" target="_blank"
                                 class="btn btn-ghost btn-xxs btn-icon" data-bs-toggle="tooltip"
