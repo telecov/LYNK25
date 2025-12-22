@@ -11,6 +11,18 @@ require __DIR__ . '/includes/logs.php';
 
 require __DIR__ . '/includes/telegram.php';
 
+/* ===========================
+   VERSION DEL SISTEMA
+   =========================== */
+$version_file = __DIR__ . '/includes/version.json';
+$system_version = 'N/D';
+
+if (file_exists($version_file)) {
+    $v = json_decode(file_get_contents($version_file), true);
+    if (is_array($v) && !empty($v['version'])) {
+        $system_version = $v['version'];
+    }
+}
 
 
 $telegram_file = __DIR__ . '/includes/telegram_config.json';
@@ -890,14 +902,12 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
     </div>
 
 
-    <!-- FOOTER igual al index -->
+   <!-- FOOTER igual al index -->
     <footer class="bg-dark text-white text-center py-3 mt-auto">
-        🚀 Dashboard web LYNK25 Desarrollado por <strong>Telecoviajero - CA2RDP</strong> |
+        🚀 Dashboard web LYNK25 Desarrollado por <strong>Telecoviajero - CA2RDP</strong> | Version del dashboard <?php echo htmlspecialchars($system_version); ?> |
         <a href="https://github.com/telecov/LYNK25" target="_blank" class="text-info text-decoration-none">GitHub</a><br>
-        © <?php echo date('Y'); ?> Telecoviajero – CA2RDP.
+         2025 Telecoviajero – CA2RDP.
     </footer>
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
