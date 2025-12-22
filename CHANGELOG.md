@@ -1,13 +1,10 @@
 # Changelog
 Todos los cambios importantes de este proyecto serán documentados en este archivo.
 
-El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/)
-y este proyecto sigue versionado semántico (SemVer).
-
 ---
 
 ## [1.2.0] - 2025-12-08
-### Added
+### Añadido
 - Gestión dinámica de configuración mediante archivos `.ini`
 - Panel web para modificar parámetros críticos del reflector
 - Control de servicios del sistema (start / stop / restart) desde la interfaz web
@@ -15,7 +12,7 @@ y este proyecto sigue versionado semántico (SemVer).
 - Opción para modificar el nombre del reflector / servidor desde el panel
 - Validación del estado real de los servicios mediante systemd
 
-### Changed
+### Cambiado
 - Reestructuración interna del sistema separando:
   - Configuración
   - Lógica del sistema
@@ -24,18 +21,18 @@ y este proyecto sigue versionado semántico (SemVer).
 - Actualización del panel de configuración y secciones administrativas
 - Mejor claridad visual en el estado del sistema y servicios
 
-### Fixed
+### Reparado
 - Ajustes menores en la lectura de parámetros de configuración
 - Correcciones en la detección del estado del reflector
 
-### Notes
+### Notas
 - Esta versión marca la transición de LYNK25 desde un dashboard informativo
   a un **panel de administración funcional del reflector P25**
 
 ---
 
 ## [1.1.0] - 2025-09-01
-### Added
+### Añadido
 - Dashboard web para visualización del reflector P25
 - Lectura y procesamiento de logs diarios del reflector
 - Visualización de:
@@ -44,18 +41,18 @@ y este proyecto sigue versionado semántico (SemVer).
   - Estado general del sistema
 - Identificación de inicios y finales de transmisión
 
-### Changed
+### Cambiado
 - Mejora en el diseño general del dashboard
 - Optimización en la lectura de logs grandes
 
-### Fixed
+### Reparado
 - Correcciones menores en el parseo de logs
 - Ajustes visuales en tablas y paneles
 
 ---
 
 ## [1.0.0] - 2025-08-20
-### Added
+### Añadido
 - Versión inicial del proyecto LYNK25
 - Base del dashboard web para reflector P25
 - Estructura inicial de archivos y logs
