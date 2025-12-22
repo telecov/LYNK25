@@ -124,84 +124,56 @@ function osVersion() {
    DVREF STATUS CHECK (lee config + cache 5 minutos)
    =========================================================== */
 function dvref_status_check($cache_file = __DIR__ . '/../data/dvref_status.json', $cache_ttl = 300) {
-    $cfg_file = __DIR__ . '/../data/dvref_config.json';
-    if (!file_exists($cfg_file)) {
-        return ['status' => "CONFIG NO DEFINIDA", 'last_verified_at' => null];
-    }
-    $cfg = json_decode(@file_get_contents($cfg_file), true);
-    if (!is_array($cfg) || empty($cfg['token']) || empty($cfg['host']) || empty($cfg['port']) || empty($cfg['tg'])) {
-        return ['status' => "CONFIG INVÁLIDA", 'last_verified_at' => null];
+
+    $cfg = json_decode(file_get_contents(__DIR__ . '/../data/dvref_config.json'), true);
+    if (!$cfg || empty($cfg['token']) || empty($cfg['host']) || empty($cfg['port']) || empty($cfg['tg'])) {
+        return ['status' => 'CONFIG INVÁLIDA', 'last_verified_at' => null];
     }
 
-    $token = $cfg['token'];
-    $host  = $cfg['host'];
-    $port  = (int)$cfg['port'];
-    $tg    = (int)$cfg['tg'];
-
-    // Cache (5 minutos)
+    // Cache
     if (file_exists($cache_file) && (time() - filemtime($cache_file) < $cache_ttl)) {
-        $cached = json_decode(@file_get_contents($cache_file), true);
-        if (is_array($cached) && isset($cached['status'])) {
-            return $cached;
-        }
+        return json_decode(file_get_contents($cache_file), true);
     }
 
-    $url = "https://dvref.com/api/v2/p25/reflectors/";
-
-    // Llamada API
-    $ch = curl_init();
+    $ch = curl_init('https://dvref.com/api/v2/p25/reflectors/');
     curl_setopt_array($ch, [
-        CURLOPT_URL => $url,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_HTTPHEADER => [
-            "Authorization: Token $token",
-            "Accept: application/json"
+            "Authorization: Token {$cfg['token']}",
+            "Accept: application/json",
+            "User-Agent: LYNK25-Dashboard/1.2.1 (CA2RDP)"
         ],
-        CURLOPT_FOLLOWLOCATION => true,
-        CURLOPT_MAXREDIRS => 3,
-        CURLOPT_SSL_VERIFYPEER => false,
-        CURLOPT_SSL_VERIFYHOST => false,
-        CURLOPT_CONNECTTIMEOUT => 8,
         CURLOPT_TIMEOUT => 10,
     ]);
+
     $response = curl_exec($ch);
-    $http = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 
-    // Parse
     $data = json_decode($response, true);
-    $reflectors = [];
-    if (is_array($data)) {
-        // Nuevo formato con envoltorio
-        if (isset($data['data']['reflectors']) && is_array($data['data']['reflectors'])) {
-            $reflectors = $data['data']['reflectors'];
-        } elseif (isset($data[0])) {
-            // fallback antiguo (array plano)
-            $reflectors = $data;
-        }
-    }
 
-    $status = "NO REPORTADO";
+    $status = 'OFFLINE DVREF';
     $last_verified = null;
 
-    foreach ($reflectors as $ref) {
-        if (
-            isset($ref['dns'], $ref['port'], $ref['designator']) &&
-            strtolower(trim($ref['dns'])) === strtolower(trim($host)) &&
-            (int)$ref['port'] == $port &&
-            (int)$ref['designator'] == $tg
-        ) {
-            $status = "EN LÍNEA DVREF";
-            $last_verified = $ref['last_verified_at'] ?? null;
-            break;
+    if (!empty($data['data']['reflectors'])) {
+        foreach ($data['data']['reflectors'] as $ref) {
+
+            if (
+                strtolower(trim($ref['dns'] ?? '')) === strtolower(trim($cfg['host'])) &&
+                (int)($ref['port'] ?? 0) === (int)$cfg['port'] &&
+                (int)($ref['designator'] ?? 0) === (int)$cfg['tg']
+            ) {
+                $status = 'ONLINE DVREF';
+                $last_verified = $ref['last_verified_at'] ?? null;
+                break;
+            }
         }
     }
 
-    $result = ['status' => $status, 'last_verified_at' => $last_verified];
+    $result = [
+        'status' => $status,
+        'last_verified_at' => $last_verified
+    ];
 
-    // Guardar cache
-    @file_put_contents($cache_file, json_encode($result, JSON_UNESCAPED_UNICODE), LOCK_EX);
-
+    file_put_contents($cache_file, json_encode($result, JSON_UNESCAPED_UNICODE), LOCK_EX);
     return $result;
 }
-
