@@ -3,6 +3,18 @@ Todos los cambios importantes de este proyecto serán documentados en este archi
 
 ---
 
+## [1.3.0] - 2025-12-22
+### Añadido
+- Se agrega boton para borrado del cache de estaciones, permite eliminar errores de lectura por ejemplo cuando llega una estacion y queda con otro ID, al borrar se actualizan
+- en pie de pagina puedes ahora puedes ver la version actual que estas trabajando
+- 
+### Cambiado
+- Se borra boton de actualizacion en linea ya que las actualizaciones se realizan solo borrardo y cargando nuevamente el repo, ya que se baja lo actual de github
+
+### Reparado
+- se repara el error de lectura que impedia ver el reflector ONLINE, cuado se cargan los datos de dvref en personalizacion. 
+- ajustes menores.
+ 
 ## [1.2.0] - 2025-12-08
 ### Añadido
 - Gestión dinámica de configuración mediante archivos `.ini`
