@@ -15,6 +15,8 @@ $config_file    = __DIR__ . '/data/header_config.json';
 $telegram_file  = __DIR__ . '/includes/telegram_config.json';
 $dvref_cfg_file = __DIR__ . '/data/dvref_config.json';
 $p25_ini_file   = '/etc/P25Reflector.ini';
+$radioid_cache_file = __DIR__ . '/data/radioid_cache.json';
+
 
 $img_dir = __DIR__ . '/img/';
 
@@ -373,6 +375,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 }
             }
 
+/* ---------- LIMPIAR CACHE RADIOID ---------- */
+} elseif ($action === 'clear_radioid_cache') {
+
+    if (file_exists($radioid_cache_file)) {
+        if (@unlink($radioid_cache_file)) {
+            $ok_msgs[] = "Cache RadioID eliminado correctamente. Se regenerará automáticamente en la próxima carga.";
+        } else {
+            $error_msgs[] = "No se pudo eliminar radioid_cache.json. Revisa permisos del archivo.";
+        }
+    } else {
+        $ok_msgs[] = "El archivo radioid_cache.json no existe. No fue necesario limpiar.";
+    }
+
+
         /* ---------- CONTROL DEL SERVICIO P25 ---------- */
         } elseif ($action === 'p25_service') {
             $cmd = $_POST['cmd'] ?? '';
@@ -668,6 +684,32 @@ $current_hostname = gethostname();
      </div>
   </div>
 
+<!-- ====== TARJETA: Mantenimiento RadioID ====== -->
+<div class="card bg-dark border-warning mb-4">
+  <div class="card-body">
+    <h5 class="mb-3 text-warning">
+      <i class="fas fa-broom me-2"></i>Mantenimiento RadioID
+    </h5>
+
+    <p class="text-muted small">
+      Este botón elimina el archivo <code>radioid_cache.json</code>.
+      Útil si existen errores, IDs desactualizados o problemas de carga.
+      El sistema lo regenerará automáticamente.
+    </p>
+
+    <form method="post"
+          onsubmit="return confirm('¿Seguro que deseas borrar el cache RadioID? Se regenerará automáticamente.');">
+      <input type="hidden" name="csrf" value="<?php echo htmlspecialchars($_SESSION['csrf']); ?>">
+      <input type="hidden" name="action" value="clear_radioid_cache">
+
+      <button type="submit" class="btn btn-warning">
+        <i class="fas fa-trash me-1"></i> Limpiar cache RadioID
+      </button>
+    </form>
+  </div>
+</div>
+
+
   <!-- ====== TARJETA: Configuración de Red – Ethernet ====== -->
   <div class="card bg-dark border-secondary mb-4">
     <div class="card-body">
@@ -910,10 +952,11 @@ $current_hostname = gethostname();
 <footer class="bg-dark text-white text-center py-3 mt-4">
   🚀 Dashboard web LYNK25 – Desarrollado por <strong>Telecoviajero - CA2RDP</strong> |
   <a href="https://github.com/telecov/" target="_blank" class="text-info text-decoration-none">GitHub</a><br>
-  © 2025 Telecoviajero - CA2RDP. Todos los derechos reservados.
+  2025 Telecoviajero - CA2RDP. Todos los derechos reservados.
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
+
