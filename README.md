@@ -35,7 +35,7 @@ Inspirado por el trabajo abierto de **Jonathan Naylor (G4KLX)**, **DVReflector d
 - Chequea constantemente los cambios para que puedas tener tu LYNK25 optimizado y al dia
 
 ## Actualizacion
-- Solo deber chequear los cambios del sistema y verificar si la version que tienes es la actual, el procedimieto es borrar la capeta html y cargar nuevamente tal cual cargaste la primera vez
+- Solo deber chequear los cambios del sistema y verificar si la version que tienes es la actual, el procedimiento es borrar la capeta html y cargar nuevamente tal cual lo hiciste la primera vez ❣️
 
 
 ## 🤝 Créditos
