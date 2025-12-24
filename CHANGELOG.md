@@ -9,7 +9,7 @@ Todos los cambios importantes de este proyecto serán documentados en este archi
 - en pie de pagina puedes ahora puedes ver la version actual que estas trabajando
 - 
 ### Cambiado
-- Se borra boton de actualizacion en linea ya que las actualizaciones se realizan solo borrardo y cargando nuevamente el repo, ya que se baja lo actual de github
+- Se borra boton de actualizacion en linea ya que las actualizaciones no cargaban bien, se corregira en versiones posteriores, ahora puedes actualizar borrando el repo t cargarlo nuevamente
 
 ### Reparado
 - se repara el error de lectura que impedia ver el reflector ONLINE, cuado se cargan los datos de dvref en personalizacion. 
