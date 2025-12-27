@@ -220,7 +220,6 @@ sudo crontab -u www-data -e
 ```bash
 * * * * * /usr/bin/php /var/www/html/includes/telegram_notif.php >> /var/www/html/data/cron_telegram.log 2>&1
 * * * * * /usr/bin/php /var/www/html/includes/generar_estado_reflector.php >> /var/www/html/data/cron_estado.log 2>&1
-*/1 * * * * php /var/www/html/includes/telegram_notificaciones.php
 
 ```
 
