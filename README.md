@@ -11,7 +11,7 @@ Inspirado por el trabajo abierto de **Jonathan Naylor (G4KLX)**, **DVReflector d
 ![Dashboard LYNK25](img/dashboard2.png)
 
 ## 🚀 Funcionalidades
-- **Tiempo real:** tráfico y estado del reflector (`estado_reflector.json`).
+- **Tiempo real:** tráfico y estado del reflector
 - **Estaciones conectadas:** lista dinámica, resalta la última 🆕.
 - **Cambio de IP y configuraciones archivo .INI
 - **Botones de gestion de servicios y reinicio de servidor.
@@ -21,7 +21,7 @@ Inspirado por el trabajo abierto de **Jonathan Naylor (G4KLX)**, **DVReflector d
 - **Telegram:** alertas a operadores/admins; registro de envíos.
 - **Personalización:** edición de título/logo/encabezado sin tocar código.
 - **About:** créditos, enlaces, versión.
-- **Actualizaciones:** chequeo de versión con `version.json`.
+- **Actualizaciones:** chequeo de versión con 
 
 
 ## 🌍 Integraciones
