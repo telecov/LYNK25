@@ -10,6 +10,13 @@ Inspirado por el trabajo abierto de **Jonathan Naylor (G4KLX)**, **DVReflector d
 ![Dashboard LYNK25](img/dashboard1.png)
 ![Dashboard LYNK25](img/dashboard2.png)
 
+
+# Presentacion de LYNK25
+
+https://www.youtube.com/watch?v=e8MJvyAJ3IA?si=HC4iWXA9b92oYRY0
+[![](https://markdown-videos.deta.dev/youtube.com/e8MJvyAJ3IA?si=HC4iWXA9b92oYRY0)](https://youtu.be/e8MJvyAJ3IA?si=HC4iWXA9b92oYRY0)
+
+
 ## 🚀 Funcionalidades
 - **Tiempo real:** tráfico y estado del reflector
 - **Estaciones conectadas:** lista dinámica, resalta la última 🆕.
