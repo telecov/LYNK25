@@ -13,7 +13,7 @@ Inspirado por el trabajo abierto de **Jonathan Naylor (G4KLX)**, **DVReflector d
 
 # Presentacion de LYNK25
 
-VIDEO DE YOUTUBE LYNK25
+[VIDEO DE YOUTUBE LYNK25](https://youtu.be/e8MJvyAJ3IA?si=HC4iWXA9b92oYRY0)
 [![](https://markdown-videos.deta.dev/youtube.com/e8MJvyAJ3IA?si=HC4iWXA9b92oYRY0)](https://youtu.be/e8MJvyAJ3IA?si=HC4iWXA9b92oYRY0)
 
 
