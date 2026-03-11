@@ -25,7 +25,7 @@ SO: Debian, Ubuntu Server, Raspbian, Bannanian
 
 LYNK25 ha sido probado y funciona de forma óptima en:
 
-Distribución recomendada: Debian 12+ / Raspbian 12
+Distribución recomendada: Debian 12 / Raspbian 12
 Entornos compatibles: Raspberry Pi OS, Ubuntu Server, Armbian (bookwoorm)
 Equipo recomendado: Computador o mini-servidor con Linux
 
@@ -171,6 +171,7 @@ sudo apt install php libapache2-mod-php -y
 sudo apt install php-curl unzip -y
 sudo apt install network-manager -y
 sudo apt install git -y
+sudo systemctl restart apache2
 ```
 
 1. Copia la carpeta completa **LYNK25** a tu servidor web:  
