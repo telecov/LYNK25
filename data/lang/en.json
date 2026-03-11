@@ -1,0 +1,95 @@
+{
+
+  "dashboard_title": "P25 Dashboard - ZONA DMR CL",
+  "go_dashboard": "Go to Dashboard",
+  "reflector_status": "Reflector Status",
+  "uptime": "Uptime",
+  "port": "Port",
+  "public_ip": "Public IP",
+  "p25_start": "P25 Start",
+  "alert": "Alert",
+  "no_alerts": "No alerts",
+  "protocol": "Protocol",
+  "system": "System", 
+  "current_traffic": "Current Traffic",
+  "transmitting": "Transmitting",
+  "waiting": "Waiting",
+  "callsign": "Callsign",
+  "name": "Name",
+  "time": "Time",
+  "duration": "Duration",
+  "connected_stations": "Connected Stations",
+  "no_active_links": "No active links.",
+  "tx_history": "Transmission History",
+  "dashboard_version": "Dashboard version",
+  "maps_user_connect": "Map of connected users",
+  "status_server": "Status Server",
+
+  "config_title": "Lynk25 Configuration – Admin Panel",
+  "go_dashboard": "Go to Dashboard",
+  "config_panel": "Configuration Panel",
+  "logout": "Log out",
+  "auth_required": "Authentication required.",
+  "csrf_invalid": "Invalid token. Please refresh and try again.",
+  "header_saved": "Header configuration saved successfully.",
+  "customize_header": "Customize header",
+  "p25_config": "P25Reflector.ini configuration",
+  "p25_service_control": "P25 Service Control",
+  "radioid_maintenance": "RadioID Maintenance",
+  "telegram_config": "Telegram Configuration",
+  "admin_credentials": "Administrator Credentials",
+  "dashboard_language": "Dashboard language",
+  "title": "Title",
+  "subtitle": "Subtitle",
+  "timezone": "Panel timezone",
+  "current_logo": "Current logo",
+  "upload_logo": "Upload new logo",
+  "save_changes": "Save changes",
+  "view_live": "Live view",
+  "reboot_server": "Reboot server",
+  "footer_text": "🚀 LYNK25 Web Dashboard – Developed by Telecoviajero - CA2RDP",
+
+
+
+  "about_page_title": "About · LYNK25",
+
+  "tt_go_dashboard": "Go to Dashboard",
+  "tt_customize": "Customize",
+  "tt_about": "About Lynk25",
+
+  "lynk25_section_title": "LYNK25",
+  "lynk25_paragraph_1": "<p><strong>LYNK25 Dashboard</strong> is the web panel for the P25 reflector that <strong>centralizes</strong> system status, <strong>live QSOs</strong>, and <strong>server metrics</strong>, so any radio amateur can view activity and join the <strong>digital world</strong>.</p>",
+
+  "lynk25_feature_list": "<ul class=\"mb-2\"><li><strong>Instant clarity:</strong> live activity, alerts and connected stations in one view.</li><li><strong>Low effort:</strong> fewer clicks, more operating. Lightweight design with periodic refresh.</li><li><strong>Useful data:</strong> callsign with QRZ link, name lookup via RadioID, and TG details.</li><li><strong>Stability:</strong> fixed dark mode, readable typography, and Bootstrap components.</li><li><strong>Customizable:</strong> title, subtitle and logo from the settings page.</li><li><strong>Telegram:</strong> receive official channel updates about connections, status and useful LYNK25 info.</li></ul>",
+
+  "lynk25_creator_block": "<div class=\"p-3 border rounded-3 bg-dark\"><p class=\"mb-2\">Created by <strong>CA2RDP / TELECOVIAJERO</strong> with the goal of an <strong>intuitive, clear and fast</strong> web interface — inspired by <strong>Jocelyn, my wife</strong>, in name, typography and colors, blending family and hobby.</p><p class=\"mb-2\">Thanks to the community that drives P25 and the open-source reference projects that make it possible. Special greetings to my radio amateur friends from <strong>ZONA DMR CHILE</strong> whose enthusiasm motivated building a P25 reflector to keep getting the most out of digital modes in amateur radio.</p><div class=\"mt-1 small\"><span class=\"badge bg-info text-dark border\">CA2PTO</span> <span class=\"badge bg-info text-dark border\">CA5EHC</span> <span class=\"badge bg-info text-dark border\">CE2DRB</span> <span class=\"ms-1 text-muted\">73</span></div></div>",
+
+  "p25_section_title": "What is P25 in amateur radio and how do we use it?",
+  "p25_paragraph_1": "<p><strong>P25 (Project 25)</strong> is a digital radio communications standard for land mobile services. In amateur radio we mainly use <strong>Phase 1</strong> in <strong>conventional</strong> mode (12.5 kHz), with <em>C4FM</em> modulation and an <em>IMBE/AMBE</em> vocoder. It provides clear audio, signaling, and talkgroup-based operation on VHF/UHF amateur bands.</p>",
+
+  "p25_list": "<ul class=\"mb-2\"><li><strong>Hotspots / MMDVM:</strong> link your P25 radio to the reflector through the Internet.</li><li><strong>MMDVM repeaters:</strong> can link to the reflector to extend coverage and reach.</li><li><strong>Talkgroups:</strong> group conversations into “rooms” (e.g. <code>30444</code>).</li><li><strong>Identity:</strong> we use <em>RadioID</em> registration to map ID ⇄ callsign/name.</li></ul>",
+
+  "p25_best_practices": "Best practices: identify your callsign, leave pauses between transmissions to avoid overlaps and timeouts, and follow local band/power regulations.",
+
+  "resources_title": "P25 Network Resources",
+  "resources_intro": "Check real-time information and useful tools for P25:",
+  "resources_list": "<ul class=\"list-unstyled\"><li>🔗 <a href=\"https://dvref.com/p25/\" target=\"_blank\" class=\"text-decoration-none text-info\">DVREF Validated Reflectors List</a></li><li>🔗 <a href=\"https://w0chp.radio/p25-reflectors/\" target=\"_blank\" class=\"text-decoration-none text-info\">w0chp Reflectors List</a></li><li>🔗 <a href=\"https://www.radioid.net/\" target=\"_blank\" class=\"text-decoration-none text-info\">RadioID Registry (IDs & Callsigns)</a></li><li>🔗 <a href=\"https://zonadmr.cl/\" target=\"_blank\" class=\"text-decoration-none text-info\">ZONA DMR CL - Amateur radio info and blog</a></li></ul>",
+
+  "thanks_title": "Acknowledgements",
+  "thanks_text": "<p>Thanks to <strong>Jonathan Naylor, G4KLX</strong>, for his open work that made P25 reflectors and utilities possible. Also thanks to everyone maintaining forks and dashboards we use as references.</p>",
+  "btn_download_p25reflector": "Download P25Reflector",
+  "btn_p25_clients": "P25 Clients (Parrot/Gateway)",
+  "btn_dashboard_repo": "LYNK25 Web Dashboard",
+  "thanks_note": "Links point to public repositories for compiling or reviewing the code.",
+
+  "support_title": "Support LYNK25",
+  "support_text": "<p class=\"mb-3\">If you want to support this project on a <strong>voluntary</strong> basis, you can donate. You can also follow me on social networks for more amateur radio, P25 and technical project content.</p>",
+  "btn_donate": "Voluntary donation",
+
+  "tt_youtube": "YouTube",
+  "tt_tiktok": "TikTok",
+  "tt_instagram": "Instagram",
+
+  "footer_line": "🚀 LYNK25 Web Dashboard developed by <strong>Telecoviajero - CA2RDP</strong>",
+  "footer_year": "2025 Telecoviajero – CA2RDP."
+}

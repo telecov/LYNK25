@@ -1,0 +1,92 @@
+{
+  "dashboard_title": "Dashboard P25 - ZONA DMR CL",
+  "go_dashboard": "Ir al Dashboard",
+  "reflector_status": "Estado del Reflector",
+  "uptime": "Uptime",
+  "port": "Puerto",
+  "public_ip": "IP Pública",
+  "p25_start": "Inicio P25",
+  "alert": "Alerta",
+  "system": "Sistema",
+  "protocol": "Protocolo",
+  "no_alerts": "Sin alertas",
+  "current_traffic": "Tráfico Actual",
+  "transmitting": "Transmitiendo",
+  "waiting": "En espera",
+  "callsign": "Indicativo",
+  "name": "Nombre",
+  "time": "Hora",
+  "duration": "Duración",
+  "connected_stations": "Estaciones Conectadas",
+  "no_active_links": "Sin enlaces activos.",
+  "tx_history": "Historial de Transmisiones",
+  "dashboard_version": "Versión del dashboard",
+  "maps_user_connect": "Mapa de Usuarios Conectados",
+  "status_server": "Estado del Servidor",
+
+  "config_title": "Configuración Lynk25 – Panel Admin",
+  "go_dashboard": "Ir al Dashboard",
+  "config_panel": "Panel de configuración",
+  "logout": "Cerrar sesión",
+  "auth_required": "Autenticación requerida.",
+  "csrf_invalid": "Token inválido. Refresca la página e inténtalo nuevamente.",
+  "header_saved": "Configuración del encabezado guardada correctamente.",
+  "customize_header": "Personalizar encabezado",
+  "p25_config": "Configuración P25Reflector.ini",
+  "p25_service_control": "Control del Servicio P25",
+  "radioid_maintenance": "Mantenimiento RadioID",
+  "telegram_config": "Configuración de Telegram",
+  "admin_credentials": "Credenciales de administrador",
+  "dashboard_language": "Idioma del dashboard",
+  "title": "Título",
+  "subtitle": "Subtítulo",
+  "timezone": "Zona horaria del panel",
+  "current_logo": "Logo actual",
+  "upload_logo": "Subir nuevo logo",
+  "save_changes": "Guardar cambios",
+  "view_live": "Ver en vivo",
+  "reboot_server": "Reiniciar servidor",
+  "footer_text": "🚀 Dashboard web LYNK25 – Desarrollado por Telecoviajero - CA2RDP",
+
+  "about_page_title": "About · LYNK25",
+
+  "tt_go_dashboard": "Ir al Dashboard",
+  "tt_customize": "Personalizar",
+  "tt_about": "About Lynk25",
+
+  "lynk25_section_title": "LYNK25",
+  "lynk25_paragraph_1": "<p><strong>LYNK25 Dashboard</strong> es el panel web del reflector P25 que <strong>centraliza</strong> el estado del sistema, los <strong>QSOs en curso</strong> y las <strong>métricas del servidor</strong>, para que cualquier radioaficionado pueda ver la actividad y sumarse <strong>al mundo digital</strong>.</p>",
+
+  "lynk25_feature_list": "<ul class=\"mb-2\"><li><strong>Claridad inmediata:</strong> actividad en vivo, alertas y estaciones conectadas en una sola vista.</li><li><strong>Bajo esfuerzo:</strong> menos clics, más operación. Diseño ligero con recarga periódica.</li><li><strong>Datos útiles:</strong> indicativo con enlace a QRZ, búsqueda de nombre vía RadioID y detalle de TG.</li><li><strong>Estabilidad:</strong> modo noche fijo, tipografías legibles y componentes Bootstrap.</li><li><strong>Personalizable:</strong> título, subtítulo y logo desde la página de ajustes.</li><li><strong>Telegram:</strong> recibe en el canal oficial conexiones, estado y datos utiles de LYNK25.</li></ul>",
+
+  "lynk25_creator_block": "<div class=\"p-3 border rounded-3 bg-dark\"><p class=\"mb-2\">Creado por <strong>CA2RDP / TELECOVIAJERO</strong> con el objetivo de una web <strong>intuitiva, clara y rápida</strong> — interfaz inspirada en <strong>Jocelyn, mi esposa</strong> tanto en nombre tipografias y colores, detalles que unen lo familiar y el hobbie.</p><p class=\"mb-2\">Gracias a la comunidad que impulsa P25 y a los proyectos open-source de referencia que lo hacen posible, saludos especiales a mis amigos radioaficionados de <strong>ZONA DMR CHILE</strong> que motivaron con entusiamo levantar un reflector P25 para seguir sacando provecho a los modos digitales de la radioaficion.</p><div class=\"mt-1 small\"><span class=\"badge bg-info text-dark border\">CA2PTO</span> <span class=\"badge bg-info text-dark border\">CA5EHC</span> <span class=\"badge bg-info text-dark border\">CE2DRB</span> <span class=\"ms-1 text-muted\">73</span></div></div>",
+
+  "p25_section_title": "¿Qué es P25 en radioafición y cómo lo usamos?",
+  "p25_paragraph_1": "<p><strong>P25 (Project 25)</strong> es un estándar de radiocomunicaciones digitales para servicios móviles terrestres. En radioafición utilizamos principalmente la <strong>Fase 1</strong> en modo <strong>convencional</strong> (12.5 kHz), con modulación <em>C4FM</em> y vocoder <em>IMBE/AMBE</em>. Ofrece audio claro, señalización y trabajo por <em>talkgroups</em> dentro de VHF/UHF en las bandas de aficionado.</p>",
+
+  "p25_list": "<ul class=\"mb-2\"><li><strong>Hotspots / MDVM:</strong> enlazan tu equipo P25 con el reflector a través de Internet.</li><li><strong>Repetidores MMDVM:</strong> pueden vincularse al reflector para ampliar cobertura y alcance.</li><li><strong>Talkgroups:</strong> agrupan las conversaciones por “salas” (ej. <code>30444</code>).</li><li><strong>Identidad:</strong> usamos el registro de <em>RadioID</em> para asociar ID ⇄ indicativo/nombre.</li></ul>",
+
+  "p25_best_practices": "Buenas prácticas: identifica tu indicativo, deja pausas entre transmisiones para evitar solapes y time-outs, y respeta la normativa local de banda y potencia.",
+
+  "resources_title": "Recursos de la Red P25",
+  "resources_intro": "Consulta información en tiempo real y herramientas útiles para P25:",
+  "resources_list": "<ul class=\"list-unstyled\"><li>🔗 <a href=\"https://dvref.com/p25/\" target=\"_blank\" class=\"text-decoration-none text-info\">Listado de Reflectores Validados por DVREF</a></li><li>🔗 <a href=\"https://w0chp.radio/p25-reflectors/\" target=\"_blank\" class=\"text-decoration-none text-info\">Listado de Reflectores w0chp</a></li><li>🔗 <a href=\"https://www.radioid.net/\" target=\"_blank\" class=\"text-decoration-none text-info\">Registro de RadioID (IDs e Indicativos)</a></li><li>🔗 <a href=\"https://zonadmr.cl/\" target=\"_blank\" class=\"text-decoration-none text-info\">ZONA DMR CL - Informacion y BLOG de radioaficion</a></li></ul>",
+
+  "thanks_title": "Agradecimientos",
+  "thanks_text": "<p>Gracias a <strong>Jonathan Naylor, G4KLX</strong>, por su trabajo abierto que hizo posible los reflectores y utilidades P25. También a quienes mantienen <em>forks</em> y dashboards que usamos como referencia.</p>",
+  "btn_download_p25reflector": "Descargar P25Reflector",
+  "btn_p25_clients": "P25 Clients (Parrot/Gateway)",
+  "btn_dashboard_repo": "Dashboard WEB LYNK25",
+  "thanks_note": "Los enlaces apuntan a repos públicos para compilar o revisar el código.",
+
+  "support_title": "Apoya a LYNK25",
+  "support_text": "<p class=\"mb-3\">Si deseas apoyar este proyecto de manera <strong>voluntaria</strong>, puedes realizar una donación. También puedes seguirme en mis redes sociales para más contenido de radioafición, P25 y proyectos técnicos.</p>",
+  "btn_donate": "Donación voluntaria",
+
+  "tt_youtube": "YouTube",
+  "tt_tiktok": "TikTok",
+  "tt_instagram": "Instagram",
+
+  "footer_line": "🚀 Dashboard web LYNK25 Desarrollado por <strong>Telecoviajero - CA2RDP</strong>",
+  "footer_year": "2025 Telecoviajero – CA2RDP."
+}

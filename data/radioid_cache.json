@@ -1,0 +1,362 @@
+{
+    "CE6PHG": {
+        "id": 7306033,
+        "name": "Walter",
+        "ts": 1771529282,
+        "city": "Villarrica",
+        "country": "Chile",
+        "lat": -39.2780911,
+        "lon": -72.2274364
+    },
+    "CA2RDP": {
+        "id": 7300333,
+        "name": "ROMAN",
+        "ts": 1771529275,
+        "city": "LA SERENA",
+        "country": "Chile",
+        "lat": -29.902631,
+        "lon": -71.2520253
+    },
+    "CA5EHC": {
+        "id": 7301818,
+        "name": "Erwin",
+        "ts": 1771529274,
+        "city": "Coronel ",
+        "country": "Chile",
+        "lat": -37.0164712,
+        "lon": -73.1561953
+    },
+    "7303190": {
+        "id": null,
+        "name": null,
+        "ts": 1770126235,
+        "city": null,
+        "country": null,
+        "lat": null,
+        "lon": null
+    },
+    "CE4UJP": {
+        "id": 7300161,
+        "name": "David",
+        "ts": 1771529278,
+        "city": "Curico",
+        "country": "Chile",
+        "lat": -34.985368,
+        "lon": -71.2393705
+    },
+    "CE3TL": {
+        "id": 7303014,
+        "name": "Eduardo",
+        "ts": 1771529272,
+        "city": "Santiago",
+        "country": "Chile",
+        "lat": -33.4377756,
+        "lon": -70.6504502
+    },
+    "CE2JJF": {
+        "id": 7301301,
+        "name": "Jorge",
+        "ts": 1771529274,
+        "city": "el quisco",
+        "country": "Chile",
+        "lat": -33.400311,
+        "lon": -71.693998
+    },
+    "CE5PTU": {
+        "id": 7300743,
+        "name": "Pedro",
+        "ts": 1771529275,
+        "city": "Coronel",
+        "country": "Chile",
+        "lat": -37.0164712,
+        "lon": -73.1561953
+    },
+    "XQ1KN": {
+        "id": 7301058,
+        "name": "Marcelo",
+        "ts": 1771529283,
+        "city": "Antofagasta",
+        "country": "Chile",
+        "lat": -23.6463741,
+        "lon": -70.3980033
+    },
+    "CE2PTO": {
+        "id": 7300325,
+        "name": "Pablo",
+        "ts": 1771529279,
+        "city": "Ovalle",
+        "country": "Chile",
+        "lat": -30.6030819,
+        "lon": -71.2029894
+    },
+    "EA5GVK": {
+        "id": 2145007,
+        "name": "Joaquin",
+        "ts": 1771529276,
+        "city": "Alguazas",
+        "country": "Spain",
+        "lat": 38.0515024,
+        "lon": -1.2416437
+    },
+    "CE2DJA": {
+        "id": 7302062,
+        "name": "Fernando",
+        "ts": 1771529279,
+        "city": "Vina Del Mar",
+        "country": "Chile",
+        "lat": -33.0244535,
+        "lon": -71.5517636
+    },
+    "CA2AWS": {
+        "id": 7301606,
+        "name": "Cesar",
+        "ts": 1771529280,
+        "city": "Los Vilos ",
+        "country": "Chile",
+        "lat": -31.9121725,
+        "lon": -71.5138659
+    },
+    "CD2HQJ": {
+        "id": 7303190,
+        "name": "Luis",
+        "ts": 1771350155,
+        "city": "La Serena",
+        "country": "Chile",
+        "lat": -29.902631,
+        "lon": -71.2520253
+    },
+    "CD3CZU": {
+        "id": 7302484,
+        "name": "Miguel",
+        "ts": 1771529277,
+        "city": "Santiago ",
+        "country": "Chile",
+        "lat": -33.4377756,
+        "lon": -70.6504502
+    },
+    "N2FUR": {
+        "id": 3116527,
+        "name": "Gustavo",
+        "ts": 1770249988,
+        "city": "Belleville",
+        "country": "United States",
+        "lat": 38.5135805,
+        "lon": -89.9841627
+    },
+    "W4KWS": {
+        "id": 3184347,
+        "name": "Tony",
+        "ts": 1770256787,
+        "city": "Key West",
+        "country": "United States",
+        "lat": 24.5548262,
+        "lon": -81.8020722
+    },
+    "CD3MYE": {
+        "id": 7301740,
+        "name": "Gabriel",
+        "ts": 1771529280,
+        "city": "Quemchi",
+        "country": "Chile",
+        "lat": -42.1445307,
+        "lon": -73.4735593
+    },
+    "CE4JWI": {
+        "id": 7300727,
+        "name": "Juan",
+        "ts": 1770403750,
+        "city": "Talca",
+        "country": "Chile",
+        "lat": -35.4265343,
+        "lon": -71.6660322
+    },
+    "WD9WTF": {
+        "id": 3217807,
+        "name": "Trevor",
+        "ts": 1770600028,
+        "city": "Richardson",
+        "country": "United States",
+        "lat": 32.9481789,
+        "lon": -96.7297206
+    },
+    "CE2UGO": {
+        "id": 7302159,
+        "name": "Hugo",
+        "ts": 1771529273,
+        "city": "Valparaiso",
+        "country": "Chile",
+        "lat": -32.5976089,
+        "lon": -70.8529753
+    },
+    "CA2CBV": {
+        "id": 7301778,
+        "name": "Ivan",
+        "ts": 1771529276,
+        "city": "Chile",
+        "country": "Chile",
+        "lat": -31.7613365,
+        "lon": -71.3187697
+    },
+    "CD1EYG": {
+        "id": 7302982,
+        "name": "Jean",
+        "ts": 1770501626,
+        "city": "Huara",
+        "country": "Chile",
+        "lat": -19.9957872,
+        "lon": -69.7727034
+    },
+    "N4IRS": {
+        "id": 3112138,
+        "name": "Steven",
+        "ts": 1770411415,
+        "city": "Vero Beach",
+        "country": "United States",
+        "lat": 27.6387163,
+        "lon": -80.3975399
+    },
+    "CE3IBW": {
+        "id": 7300220,
+        "name": "RENATO",
+        "ts": 1771529283,
+        "city": "SANTIAGO",
+        "country": "Chile",
+        "lat": -33.4377756,
+        "lon": -70.6504502
+    },
+    "CE5NZV": {
+        "id": 7305031,
+        "name": "Nelson",
+        "ts": 1771529281,
+        "city": "Tome",
+        "country": "Chile",
+        "lat": -36.6170801,
+        "lon": -72.9575043
+    },
+    "CE1HLS": {
+        "id": 7300433,
+        "name": "Hugo Luis",
+        "ts": 1771438178,
+        "city": "Iquique",
+        "country": "Chile",
+        "lat": -20.2140657,
+        "lon": -70.1524646
+    },
+    "CE2FHD": {
+        "id": 7301563,
+        "name": "Freddy Alonso",
+        "ts": 1771529273,
+        "city": "Punitaqui",
+        "country": "Chile",
+        "lat": -30.8337532,
+        "lon": -71.2573637
+    },
+    "CD3BFM": {
+        "id": null,
+        "name": null,
+        "ts": 1771263639,
+        "city": null,
+        "country": null,
+        "lat": null,
+        "lon": null
+    },
+    "CD3PVF": {
+        "id": 7302665,
+        "name": "Pablo",
+        "ts": 1771025664,
+        "city": "Buin",
+        "country": "Chile",
+        "lat": -33.7319741,
+        "lon": -70.7419619
+    },
+    "CD6UMX": {
+        "id": 7301861,
+        "name": "Marcelo",
+        "ts": 1770767989,
+        "city": "Osorno ",
+        "country": "Chile",
+        "lat": -40.5736955,
+        "lon": -73.1358091
+    },
+    "CA2FHD": {
+        "id": null,
+        "name": null,
+        "ts": 1770771966,
+        "city": null,
+        "country": null,
+        "lat": null,
+        "lon": null
+    },
+    "CA4TQY": {
+        "id": null,
+        "name": null,
+        "ts": 1771529272,
+        "city": null,
+        "country": null,
+        "lat": null,
+        "lon": null
+    },
+    "CE1UNU": {
+        "id": 7301526,
+        "name": "Jayro Joel",
+        "ts": 1771529281,
+        "city": "Mejillones",
+        "country": "Chile",
+        "lat": -23.1002342,
+        "lon": -70.4483076
+    },
+    "CE4UJS": {
+        "id": 7301629,
+        "name": "Rodrigo",
+        "ts": 1770996035,
+        "city": "Curico",
+        "country": "Chile",
+        "lat": -34.985368,
+        "lon": -71.2393705
+    },
+    "CA3ZAH": {
+        "id": 7302472,
+        "name": "Juan",
+        "ts": 1771529282,
+        "city": "recoleta",
+        "country": "Chile",
+        "lat": -33.4020744,
+        "lon": -70.6428912
+    },
+    "CE1EAA": {
+        "id": 7301172,
+        "name": "Edwards Alfaro",
+        "ts": 1771529277,
+        "city": "Caldera",
+        "country": "Chile",
+        "lat": -27.0675545,
+        "lon": -70.8222047
+    },
+    "CE4KRC": {
+        "id": 7300596,
+        "name": "Jonathan",
+        "ts": 1771214093,
+        "city": "Chillan",
+        "country": "Chile",
+        "lat": -36.6066616,
+        "lon": -72.1033194
+    },
+    "HP1YOS": {
+        "id": 7140280,
+        "name": "Yoel",
+        "ts": 1771529278,
+        "city": "Panama",
+        "country": "Panama",
+        "lat": 8.559559,
+        "lon": -81.1308434
+    },
+    "HP1AAD": {
+        "id": 7140235,
+        "name": "Angel",
+        "ts": 1771529278,
+        "city": "Loma Bonita",
+        "country": "Panama",
+        "lat": 9.3667883,
+        "lon": -79.8381872
+    }
+}
