@@ -3,6 +3,13 @@ Todos los cambios importantes de este proyecto serán documentados en este archi
 
 ---
 
+## [1.4.0] - 2026-03-10
+### Añadido
+- se agrega idioma ingles con cambio entre español o ingles
+- cambio de ip desde configuracion
+- cambio de configuracion de archivo ini desde configuracion
+
+  
 ## [1.3.0] - 2025-12-22
 ### Añadido
 - Se agrega boton para borrado del cache de estaciones, permite eliminar errores de lectura por ejemplo cuando llega una estacion y queda con otro ID, al borrar se actualizan
