@@ -188,14 +188,13 @@ function __t(string $key, bool $escape = true): string {
               </a>
             </div>
 
-            <!-- Botón PayPal (idéntico a tu original) -->
+            <!-- Botón Membresías YouTube -->
             <div class="d-grid mt-auto">
-              <form action="https://www.paypal.com/donate" method="post" target="_top">
-                <input type="hidden" name="hosted_button_id" value="7PSGRCUBLSRDY" />
-                <button type="submit" class="btn btn-outline-info w-100">
-                  <i class="fas fa-heart me-2"></i> <?= __t('btn_donate') ?>
-                </button>
-              </form>
+              <a href="https://www.youtube.com/channel/UCekZOnVxrOoDuJlFCgGKi9A/join"
+                 target="_blank" rel="noopener"
+                 class="btn btn-danger w-100">
+                <i class="fab fa-youtube me-2"></i> <?= __t('btn_join_youtube') ?>
+              </a>
             </div>
 
           </div>
