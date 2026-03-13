@@ -82,6 +82,8 @@
   "btn_dashboard_repo": "LYNK25 Web Dashboard",
   "thanks_note": "Links point to public repositories for compiling or reviewing the code.",
 
+  "btn_join_youtube": "Become a YouTube Member",
+  
   "support_title": "Support LYNK25",
   "support_text": "<p class=\"mb-3\">If you want to support this project on a <strong>voluntary</strong> basis, you can donate. You can also follow me on social networks for more amateur radio, P25 and technical project content.</p>",
   "btn_donate": "Voluntary donation",
