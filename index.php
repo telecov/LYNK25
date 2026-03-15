@@ -532,7 +532,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
 
                         <div class="mt-3">
                             <p class="mb-1"><i class="fas fa-user-tag"></i>
-                                <strong>Indicativo:</strong>
+                                <strong><?= __('callsign') ?>:</strong>
                                 <span id="traficoCall">
                                     <?php
                                     echo $trafico_actual_nombre
@@ -552,7 +552,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
                             </p>
 
                             <p class="mb-1"><i class="fas fa-user"></i>
-                                <strong>Nombre:</strong>
+                                <strong><?= __('name') ?>:</strong>
                                 <span id="traficoNombre">
                                     <?php
                                     if (!empty($ultimo_qso)) {
