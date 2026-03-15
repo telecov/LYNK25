@@ -596,13 +596,13 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
                             <div class="progress" style="height:8px;">
                                 <div class="progress-bar bg-<?php echo $cpu_perc < 70 ? 'success' : ($cpu_perc < 90 ? 'warning' : 'danger'); ?>" role="progressbar" style="width: <?php echo $cpu_perc; ?>%;"></div>
                             </div>
-                            <small class="text-muted">Cargas: <?php echo number_format($load1, 2); ?> / <?php echo number_format($load5, 2); ?> / <?php echo number_format($load15, 2); ?></small>
+                            <small class="text-muted"><?= __('load') ?>: <?php echo number_format($load1, 2); ?> / <?php echo number_format($load5, 2); ?> / <?php echo number_format($load15, 2); ?></small>
                         </div>
 
                         <!-- MEMORIA -->
                         <div class="mb-2">
                             <div class="d-flex justify-content-between">
-                                <small class="text-muted">Memoria</small>
+                                <small class="text-muted"><?= __('memoria_ram') ?></small>
                                 <small><span class="badge bg-<?php echo $mem_perc < 70 ? 'success' : ($mem_perc < 90 ? 'warning' : 'danger'); ?>">
                                         <?php echo $mem_used; ?> / <?php echo $mem_total; ?> MB (<?php echo $mem_perc; ?>%)
                                     </span></small>
@@ -610,13 +610,13 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
                             <div class="progress" style="height:8px;">
                                 <div class="progress-bar bg-<?php echo $mem_perc < 70 ? 'success' : ($mem_perc < 90 ? 'warning' : 'danger'); ?>" role="progressbar" style="width: <?php echo $mem_perc; ?>%;"></div>
                             </div>
-                            <small class="text-muted">Disponible: <?php echo $mem_avail; ?> MB</small>
+                            <small class="text-muted"><?= __('free') ?>: <?php echo $mem_avail; ?> MB</small>
                         </div>
 
                         <!-- DISCO -->
                         <div class="mb-2">
                             <div class="d-flex justify-content-between">
-                                <small class="text-muted">Disco (/)</small>
+                                <small class="text-muted"><?= __('disk') ?>(/)</small>
                                 <small><span class="badge bg-<?php echo $disk_usep < 70 ? 'success' : ($disk_usep < 90 ? 'warning' : 'danger'); ?>">
                                         <?php echo htmlspecialchars($disk['used']); ?> / <?php echo htmlspecialchars($disk['size']); ?> (<?php echo $disk_usep; ?>%)
                                     </span></small>
@@ -624,13 +624,13 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
                             <div class="progress" style="height:8px;">
                                 <div class="progress-bar bg-<?php echo $disk_usep < 70 ? 'success' : ($disk_usep < 90 ? 'warning' : 'danger'); ?>" role="progressbar" style="width: <?php echo $disk_usep; ?>%;"></div>
                             </div>
-                            <small class="text-muted">Libre: <?php echo htmlspecialchars($disk['avail']); ?></small>
+                            <small class="text-muted"><?= __('free') ?>: <?php echo htmlspecialchars($disk['avail']); ?></small>
                         </div>
 
                         <!-- SWAP -->
                         <div class="mb-2">
                             <div class="d-flex justify-content-between">
-                                <small class="text-muted">Swap</small>
+                                <small class="text-muted"><?= __('swap') ?></small>
                                 <small><span class="badge bg-<?php echo $swap_perc < 50 ? 'success' : ($swap_perc < 80 ? 'warning' : 'danger'); ?>">
                                         <?php echo $swap_total; ?> MB total · <?php echo $swap_used; ?> MB en uso (<?php echo $swap_perc; ?>%)
                                     </span></small>
@@ -643,7 +643,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
                         <!-- TEMP -->
                         <div>
                             <div class="d-flex justify-content-between">
-                                <small class="text-muted">Temperatura</small>
+                                <small class="text-muted"><?= __('temperature') ?></small>
                                 <small>
                                     <?php if ($temp_c !== null): ?>
                                         <?php $tBadge = ($temp_c < 65) ? 'success' : (($temp_c < 80) ? 'warning' : 'danger'); ?>
