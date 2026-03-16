@@ -22,7 +22,14 @@
   "tx_history": "Historial de Transmisiones",
   "dashboard_version": "Versión del dashboard",
   "maps_user_connect": "Mapa de Usuarios Conectados",
+  
   "status_server": "Estado del Servidor",
+  "load": "Carga",
+  "memoria_ram": "Memoria RAM",
+  "free": "Libre",
+  "disk": "Disco",
+  "swap": "Memoria SWAP",
+  "temperature": "Temperatura",
 
   "config_title": "Configuración Lynk25 – Panel Admin",
   "go_dashboard": "Ir al Dashboard",
