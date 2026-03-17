@@ -1,5 +1,21 @@
 # 📡 LYNK25 – P25 Reflector Web Dashboard
 
+# 📡 LYNK25 – P25 Reflector Web Dashboard
+
+🌐 🇺🇸 English | [🇪🇸 Versión en Español](README.md)
+
+---
+
+![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
+![Version](https://img.shields.io/badge/version-2.1-green.svg)
+![Status](https://img.shields.io/badge/status-active-success.svg)
+![Platform](https://img.shields.io/badge/platform-Debian%20%7C%20RaspberryPi-orange.svg)
+
+![Made by](https://img.shields.io/badge/made%20by-Telecoviajero-red.svg)
+![Support](https://img.shields.io/badge/support-YouTube%20Members-ff0000?logo=youtube)
+
+---
+
 ## 🧠 Description
 **LYNK25** is an advanced web dashboard for monitoring and managing **P25 reflectors**.
 
