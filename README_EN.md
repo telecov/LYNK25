@@ -63,7 +63,7 @@ As with my previous projects, the visual identity and concept are inspired by my
 
 ## 📦 Installation
 
-👉 [Installation guide](install.md)
+👉 [Installation guide](install_en.md)
 
 ---
 
