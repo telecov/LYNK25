@@ -1,65 +1,95 @@
-
 # 📡 LYNK25 – Dashboard Web para Reflector P25
 
 ## 🧠 Descripción
-**LYNK25** es un dashboard web de monitoreo y personalización para **reflectores P25**. Muestra tráfico en tiempo real, estaciones conectadas, historial de transmisiones, **ranking** con podio, **mapa** por ciudad asociada a la licencia, y **notificaciones por Telegram**. Incluye página **About**, página de **personalización**, y **verificación de versiones**.
+**LYNK25** es un dashboard web avanzado de monitoreo y personalización para reflectores **P25**.
 
-Inspirado por el trabajo abierto de **Jonathan Naylor (G4KLX)**, **DVReflector de NØSTAR**, y por la comunidad que hace posibles estos sistemas e inspira dashboards más intuitivos; adicionalmente como es de costubre, nombre, tipologia y colores, se basa en mi entorno familia, esta vez en **mi esposa Jocelyn**, gracias por siempre apoyar mis proyectos
+Permite visualizar en tiempo real el estado del sistema, tráfico, estaciones conectadas, historial de transmisiones y estadísticas de uso, incorporando además herramientas modernas como ranking de actividad, geolocalización y notificaciones automáticas.
 
-## DASHBOARD
+Este proyecto nace inspirado en el trabajo abierto de **Jonathan Naylor (G4KLX)**, **DVReflector de NØSTAR**, y en la comunidad global de radioaficionados digitales.
+
+Además, como es tradición en mis proyectos, la identidad visual, colores y concepto están inspirados en mi entorno familiar — en esta ocasión, dedicado a mi esposa **Jocelyn**, gracias por apoyar siempre este camino ❤️
+
+---
+
+## 🖥️ Dashboard
 ![Dashboard LYNK25](img/dashboard1.png)
 ![Dashboard LYNK25](img/dashboard2.png)
 
+---
 
-# Presentacion de LYNK25
+## 🎬 Presentación
 
-[VIDEO DE YOUTUBE LYNK25](https://youtu.be/e8MJvyAJ3IA?si=HC4iWXA9b92oYRY0)
-[![](https://markdown-videos.deta.dev/youtube.com/e8MJvyAJ3IA?si=HC4iWXA9b92oYRY0)](https://youtu.be/e8MJvyAJ3IA?si=HC4iWXA9b92oYRY0)
+[▶ Ver video en YouTube](https://youtu.be/e8MJvyAJ3IA)
 
+---
 
 ## 🚀 Funcionalidades
-- **Tiempo real:** tráfico y estado del reflector
-- **Estaciones conectadas:** lista dinámica, resalta la última 🆕.
-- **Cambio de IP y configuraciones archivo .INI
-- **Botones de gestion de servicios y reinicio de servidor.
-- **Historial:** transmisiones recientes con filtros.
-- **Ranking y podio:** actividad radial automática (Top 3).
-- **Mapa:** usuarios geolocalizados por ciudad/licencia (RadioID).
-- **Telegram:** alertas a operadores/admins; registro de envíos.
-- **Personalización:** edición de título/logo/encabezado sin tocar código.
-- **About:** créditos, enlaces, versión.
-- **Actualizaciones:** chequeo de versión con 
 
+- 📡 **Monitoreo en tiempo real** del reflector
+- 👥 **Estaciones conectadas dinámicas** (resalta la última 🆕)
+- ⚙️ **Gestión de configuración** (IP, archivos `.ini`)
+- 🔄 **Control de servicios** y reinicio del sistema
+- 📜 **Historial de transmisiones** con filtros
+- 🏆 **Ranking automático + podio (Top 3)**
+- 🗺️ **Mapa de usuarios** (RadioID + ciudad/licencia)
+- 📲 **Notificaciones Telegram** (logs + alertas)
+- 🎨 **Personalización completa** sin tocar código
+- ℹ️ **Página About** con créditos y versión
+- 🔄 **Sistema de verificación de versiones**
+
+---
 
 ## 🌍 Integraciones
-- **DVReflector API:** para validadcion de reflector online
-- **RadioID API:** para nombre/ciudad por ID.
-- **Telegram:** para envio de notificaciones, para el admin o para el grupo
 
-## 👉 [Ver instalacion](install.md) 
+- **DVReflector API** → estado del reflector  
+- **RadioID API** → datos de usuario (nombre, ciudad)  
+- **Telegram API** → notificaciones en tiempo real  
 
-## 👉 [Ver cambios del sistema](CHANGELOG.md) 
-- Chequea constantemente los cambios para que puedas tener tu LYNK25 optimizado y al dia
+---
 
-## Actualizacion
-- Solo deber chequear los cambios del sistema y verificar si la version que tienes es la actual, el procedimiento es borrar la capeta html y cargar nuevamente tal cual lo hiciste la primera vez ❣️
+## 📦 Instalación
 
+👉 [Ver instalación paso a paso](install.md)
+
+---
+
+## 🔄 Actualizaciones
+
+👉 [Ver historial de cambios](CHANGELOG.md)
+
+⚠️ **Recomendación:**
+Para actualizar correctamente:
+
+1. Realizar backup
+2. Eliminar carpeta `html`
+3. Subir nueva versión limpia
+
+---
 
 ## 🤝 Créditos
-- **Jonathan Naylor (G4KLX)** – base de software para reflectores/MMDVM.  
-- **DVReflector de NØSTAR** – pilar para gestión moderna P25.  
-- Comunidad internacional de radioaficionados digitales.  
+
+- **Jonathan Naylor (G4KLX)** – base MMDVM  
+- **DVReflector (NØSTAR)** – arquitectura P25  
+- Comunidad mundial de radioaficionados digitales  
+
+---
 
 ## 🧑‍💻 Autor
 
-CA2RDP - TelecoViajero
-Radioaficionado, desarrollador autodidacta y creador de contenidos digitales:
+**CA2RDP – TelecoViajero**
 
-* 🌐 GitHub: https://github.com/telecov
-* 🌐 QRZ: https://www.qrz.com/db/CA2RDP
-* 🔗 TikTok: https://tiktok.com/@telecoviajero
-* 🔗 Instagram: https://instagram.com/telecoviajero
-* 📺 YouTube: https://www.youtube.com/@Telecoviajero
+- 🌐 GitHub: https://github.com/telecov  
+- 🌐 QRZ: https://www.qrz.com/db/CA2RDP  
+- 📺 YouTube: https://www.youtube.com/@Telecoviajero  
+- 📸 Instagram: https://instagram.com/telecoviajero  
+- 🎵 TikTok: https://tiktok.com/@telecoviajero  
 
-## Te invito a suscribirte a miembros de youtube, tu aporte sin duda apoya a seguir creando contenido
-https://www.youtube.com/channel/UCekZOnVxrOoDuJlFCgGKi9A/join
+---
+
+## ❤️ Apoya el proyecto
+
+Si este proyecto te ayuda, puedes apoyar su desarrollo:
+
+👉 https://www.youtube.com/channel/UCekZOnVxrOoDuJlFCgGKi9A/join
+
+Tu apoyo permite mantener servidores, mejorar dashboards y seguir creando herramientas para la comunidad 📡
