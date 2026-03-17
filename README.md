@@ -104,4 +104,6 @@ Si este proyecto te ayuda, puedes apoyar su desarrollo:
 
 👉 https://www.youtube.com/channel/UCekZOnVxrOoDuJlFCgGKi9A/join
 
+👉 https://www.paypal.com/donate/?hosted_button_id=MSJZZN9KLHNG6
+
 Tu apoyo permite mantener servidores, mejorar dashboards y seguir creando herramientas para la comunidad 📡
