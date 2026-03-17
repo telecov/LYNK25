@@ -105,4 +105,6 @@ If this project helps you, consider supporting:
 
 👉 https://www.youtube.com/channel/UCekZOnVxrOoDuJlFCgGKi9A/join
 
+👉 https://www.paypal.com/donate/?hosted_button_id=MSJZZN9KLHNG6
+
 Your support helps maintain servers and continue development 📡
