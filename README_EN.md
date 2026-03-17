@@ -1,7 +1,5 @@
 # 📡 LYNK25 – P25 Reflector Web Dashboard
 
-# 📡 LYNK25 – P25 Reflector Web Dashboard
-
 🌐 🇺🇸 English | [🇪🇸 Versión en Español](README.md)
 
 ---
