@@ -9,8 +9,6 @@
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 ![Platform](https://img.shields.io/badge/platform-Debian%20%7C%20RaspberryPi-orange.svg)
 
-![Made by](https://img.shields.io/badge/made%20by-Telecoviajero-red.svg)
-![Support](https://img.shields.io/badge/support-YouTube%20Members-ff0000?logo=youtube)
 
 ## 🧠 Descripción
 **LYNK25** es un dashboard web avanzado de monitoreo y personalización para reflectores **P25**.
@@ -100,10 +98,13 @@ Para actualizar correctamente:
 
 ## ❤️ Apoya el proyecto
 
-Si este proyecto te ayuda, puedes apoyar su desarrollo:
+<p align="center">
+  <b>Si este proyecto te ha ayudado, apóyalo 🚀</b><br><br>
 
-👉 https://www.youtube.com/channel/UCekZOnVxrOoDuJlFCgGKi9A/join
+  <a href="https://www.youtube.com/channel/UCekZOnVxrOoDuJlFCgGKi9A/join">
+    <img src="https://img.shields.io/badge/Unirme%20como%20miembro-YouTube-red?style=for-the-badge&logo=youtube">
+  </a>
 
-👉 https://www.paypal.com/donate/?hosted_button_id=MSJZZN9KLHNG6
-
-Tu apoyo permite mantener servidores, mejorar dashboards y seguir creando herramientas para la comunidad 📡
+  <br><br>
+  <i>Gracias por apoyar el desarrollo de herramientas para la comunidad 📡</i>
+</p>
