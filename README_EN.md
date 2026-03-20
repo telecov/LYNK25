@@ -9,9 +9,6 @@
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 ![Platform](https://img.shields.io/badge/platform-Debian%20%7C%20RaspberryPi-orange.svg)
 
-![Made by](https://img.shields.io/badge/made%20by-Telecoviajero-red.svg)
-![Support](https://img.shields.io/badge/support-YouTube%20Members-ff0000?logo=youtube)
-
 ---
 
 ## 🧠 Description
@@ -99,12 +96,15 @@ As with my previous projects, the visual identity and concept are inspired by my
 
 ---
 
-## ❤️ Support the project
+## ❤️ Support the Project
 
-If this project helps you, consider supporting:
+<p align="center">
+  <b>If this project has helped you, consider supporting it 🚀</b><br><br>
 
-👉 https://www.youtube.com/channel/UCekZOnVxrOoDuJlFCgGKi9A/join
+  <a href="https://www.youtube.com/channel/UCekZOnVxrOoDuJlFCgGKi9A/join">
+    <img src="https://img.shields.io/badge/Join%20as%20a%20Member-YouTube-red?style=for-the-badge&logo=youtube">
+  </a>
 
-👉 https://www.paypal.com/donate/?hosted_button_id=MSJZZN9KLHNG6
-
-Your support helps maintain servers and continue development 📡
+  <br><br>
+  <i>Your support helps keep developing tools and content for the radio community 📡</i>
+</p>
