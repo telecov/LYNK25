@@ -240,7 +240,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
             'qrz'        => null,
             'started_ts' => null,
             'started_at' => null,
-	    'log_ts' => filemtime($log_file) ?: null
+            'log_ts' => filemtime($log_file) ?: null
         ], JSON_UNESCAPED_UNICODE);
         exit;
     }
@@ -309,8 +309,8 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
         $started_at = $last_start_utc ? fmt_local($last_start_utc)  : null;
         $qrz        = $callsign ? ('https://www.qrz.com/db/' . rawurlencode($callsign)) : null;
 
-	$idNum = $callsign ? radioid_lookup_id($callsign) : null;
-	$name  = $callsign ? radioid_lookup_name($callsign, $idNum) : null;
+        $idNum = $callsign ? radioid_lookup_id($callsign) : null;
+        $name  = $callsign ? radioid_lookup_name($callsign, $idNum) : null;
 
 
 
@@ -324,7 +324,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
             'qrz'        => $qrz,
             'started_ts' => $started_ts,
             'started_at' => $started_at,
-	    'log_ts'     => filemtime($log_file) ?: null        
+            'log_ts'     => filemtime($log_file) ?: null
 ], JSON_UNESCAPED_UNICODE);
         exit;
     } else {
@@ -368,7 +368,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
         }
 
         $idNum = $callsign ? radioid_lookup_id($callsign) : null;
-	$name  = $callsign ? radioid_lookup_name($callsign, $idNum) : null;
+        $name  = $callsign ? radioid_lookup_name($callsign, $idNum) : null;
 
 
         $qrz   = $callsign ? ('https://www.qrz.com/db/' . rawurlencode($callsign)) : null;
@@ -440,7 +440,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
                         <a href="about.php" class="btn btn-ghost btn-xxs btn-icon" data-bs-toggle="tooltip" title="About LYNK25" aria-label="About">
                             <i class="fas fa-circle-info"></i>
                         </a>
-                        
+
                         <?php if (!empty($telegram_cfg['invite_link'])): ?>
                             <a href="<?php echo htmlspecialchars($telegram_cfg['invite_link']); ?>" target="_blank"
                                 class="btn btn-ghost btn-xxs btn-icon" data-bs-toggle="tooltip"
@@ -482,10 +482,10 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
                             <tr>
                                 <td class="text-nowrap"><i class="fas fa-globe"></i> <strong><?= __('public_ip') ?></strong></td>
                                 <td>
-  <span data-bs-toggle="tooltip" title="IP parcial por privacidad">
-    <?php echo htmlspecialchars($ip_publica); ?>
-  </span>
-</td>
+  								<span data-bs-toggle="tooltip" title="IP parcial por privacidad">
+    							<?php echo htmlspecialchars($ip_publica); ?>
+  								</span>
+							</td>
 
                             </tr>
                             <tr>
@@ -502,7 +502,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
                                     <small class="text-muted"><?php echo $alert_rel; ?></small>
                                 </td>
                                 </td>
-			     <tr>
+                             <tr>
                                 <td class="text-nowrap"><i class="fa-brands fa-linux"></i> <strong><?= __('system') ?></strong></td>
                                 <td><?php echo htmlspecialchars($os_version); ?></td>
                             </tr>
@@ -616,7 +616,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
                         <!-- DISCO -->
                         <div class="mb-2">
                             <div class="d-flex justify-content-between">
-                                <small class="text-muted"><?= __('disk') ?>(/)</small>
+                                <small class="text-muted"><?= __('disk') ?> (/)</small>
                                 <small><span class="badge bg-<?php echo $disk_usep < 70 ? 'success' : ($disk_usep < 90 ? 'warning' : 'danger'); ?>">
                                         <?php echo htmlspecialchars($disk['used']); ?> / <?php echo htmlspecialchars($disk['size']); ?> (<?php echo $disk_usep; ?>%)
                                     </span></small>
@@ -782,144 +782,136 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
 
 
         <!-- Historial -->
-        <div class="row g-3 mt-2">
-            <div class="col-12">
-                <div class="card border-secondary small-card">
-                    <div class="card-body">
-                        <h5><i class="fas fa-history"></i> <?= __('tx_history') ?></h5>
-                        <?php if (count($trafico_historico) > 0): ?>
-                            <div class="scroll-area mt-2">
-                                <table class="table table-sm table-striped align-middle">
-                                    <thead class="table-dark">
-                                        <tr>
-                                            <th>Hora</th>
-                                            <th>ID</th>
-                                            <th>Indicativo</th>
-                                            <th>Nombre</th>
-                                            <th>TalkGroup</th>
-                                            <th>Origen</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php foreach (array_reverse($trafico_historico) as $qso): ?>
-                                            <?php $n = radioid_lookup_name($qso['indicativo'], $qso['id']); ?>
-                                            <tr>
-                                                <td><?php echo $qso['hora']; ?></td>
-                                                <td><?php echo $qso['id']; ?></td>
-                                                <td><?php echo qrz_link($qso['indicativo']); ?></td>
-                                                <td><?php echo $n ? htmlspecialchars($n) : '<span class="text-muted">—</span>'; ?></td>
-                                                <td><?php echo $qso['tg']; ?></td>
-                                                <td>
-                                                    <?php echo !empty($qso['loc']) ? htmlspecialchars($qso['loc']) : '<span class="text-muted">—</span>'; ?>
-                                                </td>
-                                            </tr>
-                                        <?php endforeach; ?>
-                                    </tbody>
-                                </table>
-
-                            </div>
-                        <?php else: ?>
-                            <p class="text-muted">Sin transmisiones recientes.</p>
-                        <?php endif; ?>
+<div class="row g-3 mt-2">
+    <div class="col-12">
+        <div class="card border-secondary small-card">
+            <div class="card-body">
+                <h5><i class="fas fa-history"></i> <?= __('tx_history') ?></h5>
+                <?php if (count($trafico_historico) > 0): ?>
+                    <div class="scroll-area mt-2">
+                        <table class="table table-sm table-striped align-middle">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th><?= __('time') ?></th>
+                                    <th>ID</th>
+                                    <th><?= __('callsign') ?></th>
+                                    <th><?= __('name') ?></th>
+                                    <th>TalkGroup</th>
+                                    <th><?= __('origin') ?></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach (array_reverse($trafico_historico) as $qso): ?>
+                                    <?php $n = radioid_lookup_name($qso['indicativo'], $qso['id']); ?>
+                                    <tr>
+                                        <td><?php echo $qso['hora']; ?></td>
+                                        <td><?php echo $qso['id']; ?></td>
+                                        <td><?php echo qrz_link($qso['indicativo']); ?></td>
+                                        <td><?php echo $n ? htmlspecialchars($n) : '<span class="text-muted">—</span>'; ?></td>
+                                        <td><?php echo $qso['tg']; ?></td>
+                                        <td>
+                                            <?php echo !empty($qso['loc']) ? htmlspecialchars($qso['loc']) : '<span class="text-muted">—</span>'; ?>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
                     </div>
+                <?php else: ?>
+                    <p class="text-muted"><?= __('no_recent_transmissions') ?></p>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <!-- 🏆 Ranking de Actividad -->
+<div class="container py-0">
+    <div class="row g-3 mt-2">
+        <div class="col-12">
+            <div class="card border-info small-card">
+                <div class="card-body">
+                    <h5><i class="fas fa-trophy text-warning"></i> <?= __('activity_ranking') ?></h5>
+
+                    <?php if (!empty($heard_rows)): ?>
+                        <?php $top3 = array_slice($heard_rows, 0, 3); ?>
+
+                        <!-- Podio -->
+                        <div class="row text-center mb-4">
+                            <?php foreach ($top3 as $i => $row): ?>
+                                <?php $n = radioid_lookup_name($row['indicativo'], $row['id']); ?>
+                                <div class="col-md-4">
+                                    <div class="card podio-<?php echo $i + 1; ?>">
+                                        <div class="card-body">
+                                            <h3>
+                                                <?php echo ($i === 0 ? "🥇" : ($i === 1 ? "🥈" : "🥉")); ?>
+                                            </h3>
+                                            <h5><strong><?php echo qrz_link($row['indicativo']); ?></strong></h5>
+                                            <p class="mb-1"><?php echo $n ? htmlspecialchars($n) : '<span class="text-muted">—</span>'; ?></p>
+                                            <span class="badge bg-info text-dark"><?php echo $row['count']; ?> QSOs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+
+                        <!-- Tabla completa -->
+                        <div class="scroll-area mt-2" style="max-height:400px; overflow-y:auto;">
+                            <table class="table table-sm table-striped align-middle">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th><?= __('ranking') ?></th>
+                                        <th><?= __('callsign') ?></th>
+                                        <th><?= __('name') ?></th>
+                                        <th>QSOs</th>
+                                        <th><?= __('time_seconds') ?></th>
+                                        <th>
+                                            <?= __('score') ?>
+                                            <i class="fas fa-circle-info text-info"
+                                                data-bs-toggle="tooltip"
+                                                data-bs-placement="top"
+                                                title="<?= __('score_tooltip') ?>">
+                                            </i>
+                                        </th>
+                                        <th><?= __('last_seen') ?></th>
+                                        <th><?= __('last_tg') ?></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php $i = 1; ?>
+                                    <?php foreach ($heard_rows as $row): ?>
+                                        <?php $n = radioid_lookup_name($row['indicativo'], $row['id']); ?>
+                                        <tr>
+                                            <td>
+                                                <?php
+                                                if ($i === 1) echo "🥇";
+                                                elseif ($i === 2) echo "🥈";
+                                                elseif ($i === 3) echo "🥉";
+                                                else echo "#" . $i;
+                                                ?>
+                                            </td>
+                                            <td><strong><?php echo qrz_link($row['indicativo']); ?></strong></td>
+                                            <td><?php echo $n ? htmlspecialchars($n) : '<span class="text-muted">—</span>'; ?></td>
+                                            <td><?php echo (int)$row['count']; ?></td>
+                                            <td><?php echo (int)$row['time']; ?></td>
+                                            <td><?php echo number_format($row['score'], 1); ?></td>
+                                            <td><?php echo htmlspecialchars($row['last']); ?></td>
+                                            <td><?php echo htmlspecialchars($row['last_tg']); ?></td>
+                                        </tr>
+                                        <?php $i++; ?>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    <?php else: ?>
+                        <p class="text-muted mb-0"><?= __('no_historical_data_yet') ?></p>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- 🏆 Ranking de Actividad -->
-    <div class="container py-0">
-        <div class="row g-3 mt-2">
-            <div class="col-12">
-                <div class="card border-info small-card">
-                    <div class="card-body">
-                        <h5><i class="fas fa-trophy text-warning"></i> Ranking de Actividad</h5>
-
-                        <?php if (!empty($heard_rows)): ?>
-                            <?php
-
-                            $top3 = array_slice($heard_rows, 0, 3);
-                            ?>
-
-                            <!-- Podio -->
-                            <div class="row text-center mb-4">
-                                <?php foreach ($top3 as $i => $row): ?>
-                                    <?php $n = radioid_lookup_name($row['indicativo'], $row['id']); ?>
-                                    <div class="col-md-4">
-                                        <div class="card podio-<?php echo $i + 1; ?>">
-                                            <div class="card-body">
-                                                <h3>
-                                                    <?php echo ($i === 0 ? "🥇" : ($i === 1 ? "🥈" : "🥉")); ?>
-                                                </h3>
-                                                <h5><strong><?php echo qrz_link($row['indicativo']); ?></strong></h5>
-                                                <p class="mb-1"><?php echo $n ? htmlspecialchars($n) : '<span class="text-muted">—</span>'; ?></p>
-                                                <span class="badge bg-info text-dark"><?php echo $row['count']; ?> QSOs</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php endforeach; ?>
-                            </div>
-
-                            <!-- Tabla completa -->
-                            <div class="scroll-area mt-2" style="max-height:400px; overflow-y:auto;">
-                                <table class="table table-sm table-striped align-middle">
-                                    <thead class="table-dark">
-                                        <tr>
-                                            <th>Ranking</th>
-                                            <th>Indicativo</th>
-                                            <th>Nombre</th>
-                                            <th>QSOs</th>
-                                            <th>Tiempo (s)</th>
-                                            <th>
-                                                Puntaje
-                                                <i class="fas fa-circle-info text-info"
-                                                    data-bs-toggle="tooltip"
-                                                    data-bs-placement="top"
-                                                    title="El puntaje combina QSOs y tiempo de transmisión. 1 QSO = 1 punto y cada 10s de cada QSO = 1 punto.">
-                                                </i>
-                                            </th>
-                                            <th>Última vez</th>
-                                            <th>Último TG</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php $i = 1;
-                                        $max_qsos = $heard_rows[0]['count']; ?>
-                                        <?php foreach ($heard_rows as $row): ?>
-                                            <?php $n = radioid_lookup_name($row['indicativo'], $row['id']); ?>
-                                            <tr>
-                                                <td>
-                                                    <?php
-                                                    if ($i === 1) echo "🥇";
-                                                    elseif ($i === 2) echo "🥈";
-                                                    elseif ($i === 3) echo "🥉";
-                                                    else echo "#" . $i;
-                                                    ?>
-                                                </td>
-                                                <td><strong><?php echo qrz_link($row['indicativo']); ?></strong></td>
-                                                <td><?php echo $n ? htmlspecialchars($n) : '<span class="text-muted">—</span>'; ?></td>
-                                                <td><?php echo (int)$row['count']; ?></td>
-                                                <td><?php echo (int)$row['time']; ?></td>
-                                                <td><?php echo number_format($row['score'], 1); ?></td>
-
-
-                                                <td><?php echo htmlspecialchars($row['last']); ?></td>
-                                                <td><?php echo htmlspecialchars($row['last_tg']); ?></td>
-
-                                            </tr>
-                                            <?php $i++; ?>
-                                        <?php endforeach; ?>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                        <?php else: ?>
-                            <p class="text-muted mb-0">Sin datos históricos aún.</p>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            </div>
-        </div>
+</div>
 
         <!-- 🌍 Mapa de usuarios conectados -->
 <div class="card mt-3 mb-4 shadow-sm overflow-hidden">
@@ -927,15 +919,15 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
         🌍 <?= __('maps_user_connect') ?>
     </div>
     <div class="card-body p-0">
-        <iframe 
-            src="includes/mapa.php" 
+        <iframe
+            src="includes/mapa.php"
             style="width:100%; height:500px; border:0; display:block;">
         </iframe>
     </div>
 </div>
 
 </div>
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
@@ -943,9 +935,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] === 'trafico') {
     <script src="js/update.js"></script>
 
 
-<?php 
+<?php
 $product_name = "LYNK25";
-require __DIR__ . '/includes/footer.php'; 
+require __DIR__ . '/includes/footer.php';
 ?>
 
 
