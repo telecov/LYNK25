@@ -1,5 +1,4 @@
 {
-
   "dashboard_title": "P25 Dashboard - ZONA DMR CL",
   "go_dashboard": "Go to Dashboard",
   "reflector_status": "Reflector Status",
@@ -10,7 +9,7 @@
   "alert": "Alert",
   "no_alerts": "No alerts",
   "protocol": "Protocol",
-  "system": "System", 
+  "system": "System",
   "current_traffic": "Current Traffic",
   "transmitting": "Transmitting",
   "waiting": "Waiting",
@@ -22,8 +21,20 @@
   "no_active_links": "No active links.",
   "tx_history": "Transmission History",
   "dashboard_version": "Dashboard version",
+  "activity_ranking": "Activity Ranking",
+  "ranking": "Ranking",
+  "time_seconds": "Time (s)",
+  "score": "Score",
+  "score_tooltip": "The score combines QSOs and transmission time. 1 QSO = 1 point and every 10s of each QSO = 1 point.",
+  "last_seen": "Last Seen",
+  "last_tg": "Last TG",
+  "no_historical_data_yet": "No historical data yet.",
+  "origin": "Origin",
+  "no_recent_transmissions": "No recent transmissions.",
+
+
   "maps_user_connect": "Map of connected users",
-  
+
   "status_server": "Status Server",
   "load": "Load",
   "memoria_ram": "RAM Memory",
@@ -31,6 +42,7 @@
   "disk": "Disk",
   "swap": "SWAP Memory",
   "temperature": "Temperature",
+
 
   "config_title": "Lynk25 Configuration – Admin Panel",
   "go_dashboard": "Go to Dashboard",
@@ -89,11 +101,12 @@
   "btn_dashboard_repo": "LYNK25 Web Dashboard",
   "thanks_note": "Links point to public repositories for compiling or reviewing the code.",
 
-  "btn_join_youtube": "Become a YouTube Member",
-  
   "support_title": "Support LYNK25",
   "support_text": "<p class=\"mb-3\">If you want to support this project on a <strong>voluntary</strong> basis, you can donate. You can also follow me on social networks for more amateur radio, P25 and technical project content.</p>",
   "btn_donate": "Voluntary donation",
+
+  "btn_join_youtube": "Become a YouTube Member",
+
 
   "tt_youtube": "YouTube",
   "tt_tiktok": "TikTok",
