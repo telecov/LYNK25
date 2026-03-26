@@ -21,8 +21,19 @@
   "no_active_links": "Sin enlaces activos.",
   "tx_history": "Historial de Transmisiones",
   "dashboard_version": "Versión del dashboard",
+  "activity_ranking": "Ranking de Actividad",
+  "ranking": "Ranking",
+  "time_seconds": "Tiempo (s)",
+  "score": "Puntaje",
+  "score_tooltip": "El puntaje combina QSOs y tiempo de transmisión. 1 QSO = 1 punto y cada 10s de cada QSO = 1 punto.",
+  "last_seen": "Última vez",
+  "last_tg": "Último TG",
+  "no_historical_data_yet": "Sin datos históricos aún.",
+  "origin": "Origen",
+  "no_recent_transmissions": "Sin transmisiones recientes.",
+
   "maps_user_connect": "Mapa de Usuarios Conectados",
-  
+
   "status_server": "Estado del Servidor",
   "load": "Carga",
   "memoria_ram": "Memoria RAM",
@@ -89,9 +100,8 @@
   "support_title": "Apoya a LYNK25",
   "support_text": "<p class=\"mb-3\">Si deseas apoyar este proyecto de manera <strong>voluntaria</strong>, puedes realizar una donación. También puedes seguirme en mis redes sociales para más contenido de radioafición, P25 y proyectos técnicos.</p>",
   "btn_donate": "Donación voluntaria",
-
   "btn_join_youtube": "Hazte miembro en YouTube",
-  
+
   "tt_youtube": "YouTube",
   "tt_tiktok": "TikTok",
   "tt_instagram": "Instagram",
